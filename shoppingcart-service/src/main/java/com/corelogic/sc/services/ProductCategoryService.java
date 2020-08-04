@@ -14,8 +14,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class ProductCategoryService {
-
-
     @Autowired
     private ProductCategoryRepository productCategoryRepository;
 
@@ -36,7 +34,7 @@ public class ProductCategoryService {
     public ProductCategoryResponse getProductCategory(String productCategoryName) throws ProductCategoryNotFoundException {
         ProductCategory productCategory = productCategoryRepository.findByProductCategoryName(productCategoryName);
 
-        if(productCategory == null) {
+        if (productCategory == null) {
             throw new ProductCategoryNotFoundException("Product Category " + productCategoryName + " was not found");
         }
         return ProductCategoryResponse

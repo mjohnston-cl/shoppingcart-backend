@@ -8,8 +8,6 @@ import lombok.Data;
 @Builder
 @AllArgsConstructor
 public class ProductCategoryResponse {
-
     private String productCategoryName;
-
     private String description;
 }
