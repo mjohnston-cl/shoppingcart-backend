@@ -20,8 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@CrossOrigin(origins = "*")
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/productCatalog")
 public class ProductCategoryController {
     private ProductCategoryService productCategoryService;
