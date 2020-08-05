@@ -1,6 +1,5 @@
 package com.corelogic.sc.controllers;
 
-
 import com.corelogic.sc.exceptions.ProductCategoryNotFoundException;
 import com.corelogic.sc.requests.AddProductCategoryRequest;
 import com.corelogic.sc.responses.ProductCategoryExceptionResponse;
